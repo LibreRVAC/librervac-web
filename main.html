@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>OpenRVAC Admin Interface</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png"/>
+    <link href="/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+  <div>
+    <section>
+      <div id="map">
+        <span class="placeholder">PLACEHOLDER</span>
+      </div>
+    </section>
+    <section>
+      Status:
+      <div id="status">
+        <table class="status">
+          <tr><th>         Name          </th><th>                  Value                  </th>    <th>Unit</th></tr>
+          <tr><td>OpenRVAC Version:      </td><td><span id="field-openrvac-version"></span></td><td></td></tr>
+          <tr><td>Firmware Version:      </td><td><span id="field-firmware-version"></span></td><td></td></tr>
+          <tr><td>Cordlib Version:       </td><td><span id="field-cordlib-version"></span></td><td></td></tr>
+          <tr><td>WebRVAC Version:       </td><td><span id="field-webrvac-version">0.0.1</span></td><td></td></tr>
+          <tr class="separator"><td colspan="3"></td></tr>
+          <tr class="separator"><td colspan="3"></td></tr>
+          <tr><td>Battery Status:        </td><td><span id="field-battery-status"></span></td>      <td>%</td></tr>
+          <tr><td>Battery Voltage:       </td><td><span id="field-battery-voltage"></span></td>     <td>V</td></tr>
+          <tr><td>Battery Current:       </td><td><span id="field-battery-current"></span></td>     <td>A</td></tr>
+          <tr><td>Battery Temperature:   </td><td><span id="field-battery-temperature"></span></td> <td>°C</td></tr>
+          <tr class="separator"><td colspan="3"></td></tr>
+          <tr class="separator"><td colspan="3"></td></tr>
+          <tr><td>Left wheel raised:     </td><td><span id="field-right-wheel"></span></td>         <td></td></tr>
+          <tr><td>Right wheel raised:    </td><td><span id="field-left-wheel"></span></td>          <td></td></tr>
+          <tr><td>Left wheel RPM:        </td><td><span id="field-left-wheel-rpm"></span></td>      <td>rpm</td></tr>
+          <tr><td>Right wheel RPM:       </td><td><span id="field-right-wheel-rpm"></span></td>     <td>rpm</td></tr>
+          <tr><td>Main brush RPM:        </td><td><span id="field-main-brush-rpm"></span></td>      <td>rpm</td></tr>
+          <tr><td>Left side brush RPM:   </td><td><span id="field-right-wheel-rpm"></span></td>     <td>rpm</td></tr>
+          <tr><td>Right side brush RPM:  </td><td><span id="field-right-wheel-rpm"></span></td>     <td>rpm</td></tr>
+          <tr class="separator"><td colspan="3"></td></tr>
+          <tr class="separator"><td colspan="3"></td></tr>
+          <tr><td>Main loop iterations:  </td><td><span id="field-main-steps"></span></td> <td>iterations/s</td></tr>
+          <tr><td>Vthal → MCU bandwidth: </td><td><span id="field-bandwidth-in"></span></td>       <td>kB/s</td></tr>
+          <tr><td>Vthal ← MCU bandwidth: </td><td><span id="field-bandwidth-out"></span></td>      <td>kB/s</td></tr>
+        </table>
+      </div>
+    </section>
+    <section>
+      Controls:
+      <table id="controls-table">
+        <tr>
+          <th>Output</th>
+          <th>Input</th>
+          <th>Set</th>
+          <th>Value</th>
+          <th>Invert</th>
+          <th>Weight</th>
+          <th>Shift</th>
+          <th>Expo</th>
+          <th>Mix value</th>
+          <th>Final result</th>
+        </tr>
+      </table>
+    </section>
+    <section>
+      Log:
+      <textarea id="log"></textarea>
+    </section>
+  </div>
+  <script src="main.js"></script>
+  </body>
+</html>

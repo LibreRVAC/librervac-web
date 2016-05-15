@@ -1,0 +1,100 @@
+body {
+    font-family: "Lucida Console", Monaco, monospace;
+    width: 1000px;
+    margin-left:  auto;
+    margin-right: auto;
+}
+
+
+th {
+    background-color: #4CAF50;
+    color: #FAFAFA;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table {
+    border: none;
+}
+
+th, td {
+    border: 1px solid #AAA;
+}
+
+.separator, .separator td {
+    height: 3px;
+    border: none;
+    background: transparent !important;
+}
+
+
+#log {
+    display: block;
+    overflow-y: scroll;
+    height: 150px;
+    width: 100%;
+}
+
+
+td {
+    text-align: center;
+}
+
+
+input, button, textarea {
+    background-color: #EEE;
+    color: #000;
+}
+
+table.status td:first-child {
+    text-align: right;
+}
+
+table.status td:last-child {
+    text-align: left;
+}
+
+
+table.status td {
+    min-width: 80px;
+}
+
+
+
+#map {
+    display: inline-block;
+    float: right;
+    font-size: 120%;
+    text-align: center;
+    padding: 148px 45px;
+    border: 10px solid #FFCC33;
+    background-image: repeating-linear-gradient(45deg, #FFCC33 0px, #FFCC33 25px, transparent 25px, transparent 50px);
+}
+
+
+
+.placeholder {
+    font-size: 200%;
+    color: #CCAA11;
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+
+
+section {
+    margin: 40px 0px;
+}
+
+
+
+table input[type=number] {
+    width: 40px;
+}
+
